@@ -1,8 +1,9 @@
 /* Regras gerais */
 :root{
-    font-size: 16px;
+    font-size: 19px;
     --bg-color:rgb(45,45,45);
     --main-color: rgb(241,202,45);
+    --transcolor: rgba(0, 0, 0, 0.6);
     --transpeed: 0.4s;
 }
 *{
@@ -13,9 +14,11 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: #eee;
+
 }
 header{
-    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    background-color: var(--transcolor);
     display: flex;
     flex-grow: 0;
     justify-content: space-between;
@@ -61,7 +64,7 @@ li{
     display: flex;
     flex-direction: column;
     position: absolute; 
-    background-color: rgba(19, 19, 19,0.7);
+    background-color: var(--transcolor);
     padding-top: 40px;
 }
 .dropdown ul li:hover{
@@ -80,3 +83,49 @@ li{
 /*Fim dropdown*/
 
 /* Área principal */ 
+main h2{
+    margin: 1% auto;
+}
+main img:first-of-type{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+main img:nth-of-type(2){
+    float: right;
+    width: 30%;
+}
+/*Depoimentos clientes*/
+#depoindex{
+    width: 100%;
+    margin: 0 0 2% 2%;
+}
+#depocontent{
+    width: 67%;
+    background-color: rgb(130, 26, 172);
+    height: 16rem;
+    border: 1px solid red;
+}
+/*Footer*/
+footer{
+    width: 94%;
+    background-color: var(--transcolor);
+    min-height: 50px;
+    text-align: center;
+    padding: 3%;
+}  
+.socialmd{
+    max-width: 50px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(175, 143, 14);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(117, 114, 114);
+}
+footer span{
+    margin-top: 1%;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-shadow: 0 0 5px rgb(148, 150, 32);
+}
