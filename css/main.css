@@ -1,0 +1,82 @@
+/* Regras gerais */
+:root{
+    font-size: 16px;
+    --bg-color:rgb(45,45,45);
+    --main-color: rgb(241,202,45);
+    --transpeed: 0.4s;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: #eee;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    align-items: center;    
+}
+h1{
+    display: none;
+}
+main{
+    margin: 2%;
+}
+h2{
+    color: var(--main-color);
+}
+/*Header*/
+.logo{
+    max-width: 200px;
+}
+/* Nav bar */
+.navbar{
+    display: flex; 
+}
+li{
+    list-style-type: none;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #eee;
+    padding: 10px;
+    margin: 1px 1px 1px 0   ;
+    font-size: 150%;
+}
+.nav-item a:hover{
+    transition: var(--transpeed);
+    /* text-shadow: posicionamento posicionamento blur cor; */
+    /* Da pra separar por vírgula pra adicionar mais de um text-shadow*/ 
+    text-shadow: 0 0 4px #fff, 0 0 3px var(--main-color); 
+}
+/* "Quem somos" e "Eventos" que são Dropdown */
+.dropdown ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    background-color: rgba(19, 19, 19,0.7);
+    padding-top: 40px;
+}
+.dropdown ul li:hover{
+    background-color: rgba(158, 158, 158, 0.1);
+}
+.dropdown ul li>a{
+    display: none;  
+    width: 90%;
+    text-align: center;
+}
+.dropdown:hover ul li a{
+    transition: var(--transpeed);
+    display: flex;
+}
+
+/*Fim dropdown*/
+
+/* Área principal */ 
