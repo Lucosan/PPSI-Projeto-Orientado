@@ -20,7 +20,7 @@ header{
     width: 100%;
     background-color: var(--transcolor);
     display: flex;
-    flex-grow: 0;
+    flex-wrap: wrap;
     justify-content: space-between;
     top: 0;
     position: sticky;
@@ -64,7 +64,7 @@ li{
     display: flex;
     flex-direction: column;
     position: absolute; 
-    background-color: var(--transcolor);
+    background-color: rgba(18,18,18,0.5);
     padding-top: 40px;
 }
 .dropdown ul li:hover{
@@ -73,7 +73,7 @@ li{
 .dropdown ul li>a{
     display: none;  
     width: 90%;
-    text-align: center;
+    justify-content: center;
 }
 .dropdown:hover ul li a{
     transition: var(--transpeed);
@@ -95,7 +95,45 @@ main img:nth-of-type(2){
     float: right;
     width: 30%;
 }
-/*Depoimentos clientes*/
+/*Saiba mais Quem somos*/
+.saibamais{
+    min-height: 100px;
+}
+.saibamais h2{
+    text-align: center;
+    margin: 3rem 0;
+}
+.saibamais div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.saibamais button{
+    transition: var(--transpeed);
+    padding: 30px;
+    min-height: 40px;
+    font-size: 2rem;
+    background-color: rgba(161, 161, 161, 0.1);
+    border: 1px solid #fff;
+    color: #eee;
+    text-shadow: 0 0 5px var(--main-color);
+    box-shadow: 0 0 5px rgba(241,202,45,0.5);
+    border-radius: 13px;
+}
+.saibamais button:hover{
+    transition: var(--transpeed);
+    text-shadow: 0 0 9px var(--main-color);
+    box-shadow: 0 0 9px var(--main-color);
+}
+/* Área principal quem somos */
+.imgequip{
+    max-width: 600px;
+    float: right;
+    border-radius: 10%;
+    border: 1px solid var(--main-color);
+}
+
+/*Depoimentos clientes index*/
 #depoindex{
     width: 100%;
     margin: 0 0 2% 2%;
@@ -106,8 +144,26 @@ main img:nth-of-type(2){
     height: 16rem;
     border: 1px solid red;
 }
+/*Galeria de fotos*/
+#galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#galeria h3{
+    padding: 10px;
+    text-align: center;
+}
+#galeria img{
+    width: 490px;
+    border-radius: 10%; 
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px var(--main-color);
+}
 /*Footer*/
 footer{
+    margin-top: 1.8rem;
     width: 94%;
     background-color: var(--transcolor);
     min-height: 50px;
@@ -115,12 +171,18 @@ footer{
     padding: 3%;
 }  
 .socialmd{
+    transition: var(--transpeed);
     max-width: 50px;
     padding: 10px;
     margin: 10px;
     background-color: rgb(175, 143, 14);
     border-radius: 10px;
     box-shadow: 0 0 5px rgb(117, 114, 114);
+}
+.socialmd:hover{
+    transition: var(--transpeed);
+    background-color: var(--main-color);
+    box-shadow: 0 0 6px #fff;
 }
 footer span{
     margin-top: 1%;
