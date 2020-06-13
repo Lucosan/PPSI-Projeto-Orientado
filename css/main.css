@@ -131,8 +131,22 @@ main img:nth-of-type(2){
     float: right;
     border-radius: 10%;
     border: 1px solid var(--main-color);
+    margin: 1rem;
 }
 
+/*Área principal Nossa Equipe*/
+section ul{
+    margin: 2rem;
+}
+h4{
+    color: var(--main-color);
+    margin: 1rem;
+}
+section ul p{
+    margin: 1rem;
+    color: #ddd;
+    text-shadow: 0 0 3px rgba(241, 202, 45, 0.4);
+}
 /*Depoimentos clientes index*/
 #depoindex{
     width: 100%;
