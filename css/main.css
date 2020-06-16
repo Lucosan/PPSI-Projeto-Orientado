@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 /* Regras gerais */
 :root{
     font-size: 19px;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     --bg-color:rgb(45,45,45);
     --main-color: rgb(241,202,45);
     --transcolor: rgba(0, 0, 0, 0.6);
@@ -11,10 +13,8 @@
     padding: 0;
 }
 body{
-    font-family: Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: #eee;
-
 }
 header{
     width: 100%;
@@ -101,29 +101,34 @@ main img:nth-of-type(2){
 }
 .saibamais h2{
     text-align: center;
-    margin: 3rem 0;
+    margin-top: 1rem;
 }
 .saibamais div{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.saibamais button{
-    transition: var(--transpeed);
+.fancybtn{
     padding: 30px;
     min-height: 40px;
     font-size: 2rem;
+    transition: var(--transpeed);
     background-color: rgba(161, 161, 161, 0.1);
     border: 1px solid #fff;
     color: #eee;
     text-shadow: 0 0 5px var(--main-color);
     box-shadow: 0 0 5px rgba(241,202,45,0.5);
     border-radius: 13px;
+    margin: 3rem auto;
 }
-.saibamais button:hover{
+.fancybtn:hover{
     transition: var(--transpeed);
     text-shadow: 0 0 9px var(--main-color);
     box-shadow: 0 0 9px var(--main-color);
+}
+.fancybtn:active{
+    transition: 0.3s;
+    background-color: rgba(14, 14, 14, 0.8); 
 }
 /* Área principal quem somos */
 .imgequip{
@@ -175,6 +180,127 @@ section ul p{
     border: 1px solid #fff;
     box-shadow: 0 0 5px var(--main-color);
 }
+/*Área principal contato*/
+header+.redesociais{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+header+.redesociais .socialmd:hover{
+    max-width: 55px;
+    position: relative;
+}
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+label{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+form h2{
+    text-shadow: 0 0 2px #888;
+}
+label:last-of-type{
+    margin-bottom: 1rem;
+}
+input,textarea{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+input:focus, textarea:focus{
+    border: 2px solid rgb(66, 66, 66);
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+textarea{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+/*Area principal Casamentos*/
+.infoscontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*Serviços oferecidos casamento*/
+.gridinfos{
+    width: 90%;
+    display: grid;
+    grid-template:
+    "grid1 grid2 grid4" 15px
+    "grid1 grid2 grid4" 150px 
+    "grid1 grid2 grid4" 150px 
+    "grid1 grid3 grid4" 150px 
+    "grid5 grid5 grid6" 150px
+    "grid5 grid5 grid7" 150px
+    "grid5 grid5 grid7" 150px;
+    margin-left: 1rem;
+    padding: 10px;
+}
+.gridinfos div{
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    margin: 1px;
+    text-align: center;
+    transition: var(--transpeed);
+    padding-top: 5px;
+}
+.gridinfos div:hover{
+    transition: var(--transpeed);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    text-shadow: 0 0 2px var(--main-color);
+    padding-top: 30px;
+}
+.griditem1{
+    border-top-left-radius: 30px;
+    grid-area: grid1;
+}
+.griditem2{
+    grid-area: grid2;
+}
+.griditem3{
+    grid-area: grid3;
+}
+.griditem4{
+    grid-area: grid4;
+    border-top-right-radius: 30px;
+}
+.griditem5{
+    grid-area: grid5;
+    border-bottom-left-radius: 30px;
+}
+.griditem6{
+    grid-area: grid6;
+}
+.gridinfos .fancybtn{
+    grid-area: grid7;
+}
+     /*Imagens info casamento*/
+    .fotografia{
+        background-image: url(../img/casamento/fotografia.jpg);
+    }
+    .deco{
+        background-image: url(../img/casamento/decoracao.jpg);
+    }
+    .luamel{
+        background-image: url(../img/casamento/luamel.jpg);
+    }
+    .doces{
+        background-image: url(../img/casamento/doces.jpg);
+    }
+    .vestido{
+        background-image: url(../img/casamento/vestido.jpg);
+    }
+    .convites{
+        background-image: url(../img/casamento/convite.jpg);
+    }
+
 /*Footer*/
 footer{
     margin-top: 1.8rem;
