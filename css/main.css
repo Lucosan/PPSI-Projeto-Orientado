@@ -132,7 +132,7 @@ main img:nth-of-type(2){
 }
 /* Área principal quem somos */
 .imgequip{
-    max-width: 600px;
+    max-width: 50%;
     float: right;
     border-radius: 10%;
     border: 1px solid var(--main-color);
@@ -223,15 +223,79 @@ textarea{
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
-/*Area principal Casamentos*/
+/*Area principal Eventos*/
+.apresentacao{
+    margin: 4.5rem;
+    font-size: 4rem;
+    text-align: center;
+}
+.apresentacao+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textoapresentacao{
+    width: 40%;
+}
+.textoapresentacao h3{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+.grideventos{
+    width: 90%;
+    display: grid;
+    grid-template: 
+    "casamento debutantes empresariais formaturas" 100px
+    "casamento debutantes empresariais formaturas" 100px
+    "casamento debutantes empresariais formaturas" 100px
+    "casamento debutantes empresariais formaturas" 100px
+    "casamento debutantes empresariais formaturas" 100px;
+    margin: 0 auto;
+}
+.grideventos div{
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    margin: 1px;
+    text-align: center;
+    transition: var(--transpeed);
+    padding-top: 5px;
+}
+.grideventos div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+.grideventos div:hover{
+    transition: var(--transpeed);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    text-shadow: 0 0 2px var(--main-color);
+    padding-top: 30px;
+}
+.grideventos_casamento{
+    grid-area: casamento;
+    background-image: url(../img/eventos/vestido.jpg);
+}
+.grideventos_debutantes{
+    grid-area: debutantes;
+    background-image: url(../img/eventos/debutante.jpg);
+}
+.grideventos_empresariais{
+    grid-area: empresariais;
+    background-image: url(../img/eventos/empresario.jpg);
+}
+.grideventos_formaturas{
+    grid-area: formaturas;
+    background-image: url(../img/eventos/formatura.jpg);
+}
+/*Area principal Dropdown eventos*/
 .infoscontainer{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-/*Serviços oferecidos casamento*/
+/*Serviços oferecidos em Dropdown eventos*/
 .gridinfos{
     width: 90%;
+    font-size: 1.3rem;
     display: grid;
     grid-template:
     "grid1 grid2 grid4" 15px
@@ -283,22 +347,44 @@ textarea{
 }
      /*Imagens info casamento*/
     .fotografia{
-        background-image: url(../img/casamento/fotografia.jpg);
+        background-image: url(../img/eventos/fotografia.jpg);
     }
     .deco{
-        background-image: url(../img/casamento/decoracao.jpg);
+        background-image: url(../img/eventos/decoracao.jpg);
     }
     .luamel{
-        background-image: url(../img/casamento/luamel.jpg);
+        background-image: url(../img/eventos/luamel.jpg);
     }
     .doces{
-        background-image: url(../img/casamento/doces.jpg);
+        background-image: url(../img/eventos/doces.jpg);
     }
     .vestido{
-        background-image: url(../img/casamento/vestido.jpg);
+        background-image: url(../img/eventos/vestido.jpg);
     }
     .convites{
-        background-image: url(../img/casamento/convite.jpg);
+        background-image: url(../img/eventos/convite.jpg);
+    }
+    /*Imagens info debutatantes*/
+    .musicos{
+        background-image: url(../img/eventos/dj.jpg);
+    }
+    .iluminacao{
+        background-image: url(../img/eventos/iluminacao.jpg);
+    }
+    /*Imagens info empresariais*/
+    .palco{
+        background-image: url(../img/eventos/palco.jpg);
+    }
+    .convites_empresa{
+        background-image: url(../img/eventos/convite_empresa.jpg);
+    }
+    /*Imagens info formatura*/
+    .baile{
+        background-image: url(../img/party-2.jpg);
+        background-position: right;
+    }
+    .colacao{
+        background-image: url(../img/eventos/colacao_de_grau.jpg);
     }
 
 /*Footer*/
