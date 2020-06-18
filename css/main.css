@@ -7,6 +7,7 @@
     --main-color: rgb(241,202,45);
     --transcolor: rgba(0, 0, 0, 0.6);
     --transpeed: 0.4s;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -182,7 +183,7 @@ section ul p{
     text-align: center;
 }
 .depodosclientes img{
-    border: 1px solid var(--main-color);
+    border: 3px solid var(--main-color);
     border-radius: 20%;
     width: 80%;
     display: block;
@@ -313,6 +314,35 @@ textarea{
     background-image: url(../img/eventos/formatura.jpg);
 }
 /*Area principal Dropdown eventos*/
+/*DADOS PARA RELATÓRIO DO LUCCA*/
+/*Essa parte tá um poucom complexa. 
+  presentvideo é o container que vai segurar o video e a div "videoverlay" 
+  o videoverlay fica acima no container, ele ganha um position absolute para 
+  que o espaço que ele ocupa seja desconsiderado e ele fica em cima do vídeo abaixo 
+  O resto é flex pra alinhar, o height de 99.1% é pra pegar o vídeo de ponta a ponta.
+  Como o container é relative o menu é sticky deu conflito, mas adicionando um z-index de -1 
+   ele tira o conflito.
+*/
+.presentvideo{
+    top: 0;
+    position: relative;
+    z-index: -1;
+}
+.presentvideo video{
+    width: 100%;
+}
+.videoverlay{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.7);
+    text-shadow: 0 0 15px var(--main-color);
+    width: 100%;
+    height: 99.1%;
+    position: absolute;
+    top: 0;
+}
 .infoscontainer{
     width: 100%;
     display: flex;
@@ -416,7 +446,7 @@ textarea{
 /*Footer*/
 footer{
     margin-top: 1.8rem;
-    width: 94%;
+    width: 100%;
     background-color: var(--transcolor);
     min-height: 50px;
     text-align: center;
