@@ -80,6 +80,9 @@ li{
     transition: var(--transpeed);
     display: flex;
 }
+.burger{
+    display: none;
+}
 
 /*Fim dropdown*/
 
@@ -122,6 +125,10 @@ main img:nth-of-type(2){
     border-radius: 13px;
     margin: 3rem auto;
 }
+.fancybtn a{
+    color: #eee;
+    text-decoration: none;
+}
 .fancybtn:hover{
     transition: var(--transpeed);
     text-shadow: 0 0 9px var(--main-color);
@@ -155,14 +162,11 @@ section ul p{
 }
 /*Depoimentos clientes index*/
 #depoindex{
-    width: 100%;
-    margin: 0 0 2% 2%;
+    width: 90%;
+    margin: 0 auto;
 }
-#depocontent{
-    width: 67%;
-    background-color: rgb(130, 26, 172);
-    height: 16rem;
-    border: 1px solid red;
+#depoindex .fancybtn{
+    margin-left: 3rem;
 }
 /*Area principal Depoimentos dos clientes */
 .depodosclientes{
@@ -331,11 +335,15 @@ textarea{
 .presentvideo video{
     width: 100%;
 }
+.presentvideo img{
+    width: 100%;
+}
 .videoverlay{
     font-size: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background-color: rgba(0,0,0, 0.7);
     text-shadow: 0 0 15px var(--main-color);
     width: 100%;

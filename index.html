@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Início — DRS Eventos</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header role="banner">
              <h1>DRS eventos</h1>
              <a href="index.html"><img src="img/logo-DRS.png" alt="Logo da DRS eventos" class="logo"></a>
+             <div class="burger">
+                <a href="javascript:void(0);" class="icon" onclick="ativarburger()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
              <nav role="navegação">
                 <ul class="navbar" role="lista de links">
                     <li class="nav-item" role="item da lista"><a href="index.html">Início </a></li>
@@ -59,11 +66,8 @@
             </p>
         </main>
         <section id="depoindex">
-            <h2>Depoimentos de nossos clientes</h2>
-            <!--Um slider com depoimentos dos clientes. Ao final no lado direito terá o nome do cliente-->
-            <div id="depocontent">
-                <p>Imagine depoimentos com botãozinho pra passar pro lado</p>
-            </div>
+            <a href="depoclientes.html"><button class="fancybtn">Depoimentos</button></a>
+            <a href="contato.html"><button class="fancybtn">Orçamento</button></a>
         </section>
         <footer>
            <div class="redesociais">
@@ -76,6 +80,6 @@
            </div>
            <span> &copy;Neon Knights</span>
         </footer>
-
+        <script src="js/main.js"></script>
     </body>
 </html>

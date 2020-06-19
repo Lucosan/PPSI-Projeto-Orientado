@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Debutantes — DRS Eventos</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header role="banner">
              <h1>DRS eventos</h1>
              <a href="index.html"><img src="img/logo-DRS.png" alt="Logo da DRS eventos" class="logo"></a>
+             <div class="burger">
+                <a href="javascript:void(0);" class="icon" onclick="ativarburger()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
              <nav role="navegação">
                 <ul class="navbar" role="lista de links">
                     <li class="nav-item" role="item da lista"><a href="index.html">Início </a></li>
@@ -38,11 +45,11 @@
             <!--Aqui vai ter um vídeo de uma festa de 15 anos com um texto em overlay
             "Realize seu sonho e de sua filha" centralizado, ou alguma frase do tipo-->
             <div class="videoverlay">Realize seu sonho e o de sua filha</div>
-            <video src="videos/casamento.mp4" autoplay loop>
+            <video src="videos/debutantes.mp4" autoplay loop>
             </video>
         </section>
         <main>
-            <h2>A festa mais importante de todas...</h2> <!--Sem ideia ainda-->
+            <h2>A festa mais importante de todas...</h2> 
             <p>Merece ser tratada com todo o amor e carinho de uma mãe, e toda a proteção e cuidado de um pai. Na DRS Eventos, as festas de 15 anos são <br>
                 feitas com o máximo de empenho, para dar à família a sensação de aconchego, satisfação e gratidão por todos os momentos vividos até essa <br> 
 				data tão importante. Então pode confiar e comemorar, e vem pra DRS! É só licar no botão "Orçamento" e entrar em contato!
@@ -68,7 +75,7 @@
                 <div class="griditem fotografia">
                     Fotografia
                 </div>
-                <button class="fancybtn">Orçamento</button>
+                <button class="fancybtn"><a href="contato.html">Orçamento</a></button>
                 <!--Aqui vão ter divs de tamanhos diferentes que terão como background image 
                 o item correspondente, no caso dessa página seria algo tipo "Decoração, lua de mel
                 Doces..." etc como serviços específicos para casamento-->
@@ -85,6 +92,6 @@
             </div>
             <span> &copy;Neon Knights</span>
          </footer>
- 
+         <script src="js/main.js"></script>
      </body>
  </html>

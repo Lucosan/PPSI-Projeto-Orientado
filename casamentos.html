@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Casamentos — DRS Eventos</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header role="banner">
              <h1>DRS eventos</h1>
              <a href="index.html"><img src="img/logo-DRS.png" alt="Logo da DRS eventos" class="logo"></a>
+             <div class="burger">
+                <a href="javascript:void(0);" class="icon" onclick="ativarburger()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
              <nav role="navegação">
                 <ul class="navbar" role="lista de links">
                     <li class="nav-item" role="item da lista"><a href="index.html">Início </a></li>
@@ -40,7 +47,7 @@
             </video>
         </section>
         <main>
-            <h2>"E eu os declaro..."</h2> <!--Sem ideia ainda-->
+            <h2>"E eu vos declaro..."</h2> 
             <p>A DRS Eventos recebe com todo o prazer esse sacramento tão importante na vida de um casal. Pode contar com a gente pra fazer do seu casamento um evento inesquecível <br>
                para ambas as famílias. Buffets organizados pelos melhores cozinheiros, servidos pelos melhores garçons, acompanhados de uma decoração que vai fazer do seu momento o <br>
 			   mais encantador. Entre em contato para consultar orçamentos, e vem pra DRS Eventos!
@@ -66,7 +73,7 @@
                 <div class="griditem fotografia">
                     Fotografia
                 </div>
-                <button class="fancybtn">Orçamento</button>
+                <button class="fancybtn"><a href="contato.html">Orçamento</a></button>
                 <!--Aqui vão ter divs de tamanhos diferentes que terão como background image 
                 o item correspondente, no caso dessa página seria algo tipo "Decoração, lua de mel
                 Doces..." etc como serviços específicos para casamento-->
@@ -83,6 +90,6 @@
             </div>
             <span> &copy;Neon Knights</span>
          </footer>
- 
+         <script src="js/main.js"></script>
      </body>
  </html>

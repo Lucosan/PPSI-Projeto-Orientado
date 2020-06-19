@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Empresariais — DRS Eventos</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header role="banner">
              <h1>DRS eventos</h1>
              <a href="index.html"><img src="img/logo-DRS.png" alt="Logo da DRS eventos" class="logo"></a>
+             <div class="burger">
+                <a href="javascript:void(0);" class="icon" onclick="ativarburger()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
              <nav role="navegação">
                 <ul class="navbar" role="lista de links">
                     <li class="nav-item" role="item da lista"><a href="index.html">Início </a></li>
@@ -37,12 +44,16 @@
         <section class="presentvideo">
             <!--Aqui vai ter um vídeo de uma festa um evento empresarial com um texto em overlay
             "Faça do seu evento empresarial memorável" centralizado, ou alguma frase do tipo-->
+            <!--PARA O PROFESSOR: Nesse caso desistimos de colocar vídeo para deixar o site mais leve e por falta de video stock que cumprisse
+            nossos requisitos-->
+            <div class="videoverlay">Faça do seu evento empresarial memorável</div>
+            <img src="img/eventos//empresariais_banner.jpg" alt="Uma equipe empresarial juntam suas mãos ao centro da imagem">
         </section>
         <main>
-            <h2>Negócio Fechado!</h2> <!--Sem ideia ainda-->
-            <p>Na DRS, você pode convidar os seus colegas de trabalho e/ou de outras companhias para comemorar o fechamento de um acordo, a assinatura de um contrato e  <br>
-               muito mais! Estamos à disposição para fazer dessa celebração uma das mais marcantes da sua vida profissional! Seus clientes são nossos clientes, e serão tratados <br> 
-               da maneira mais respeitosa possível, como verdadeiros clientes DRS. Então, o que está esperando? Vem pra DRS! Clique em "Orçamento" para entrar em contato<br>
+            <h2>Negócio Fechado!</h2> 
+            <p>Na DRS, você pode convidar os seus colegas de trabalho e/ou de outras companhias para comemorar o fechamento de um acordo, a assinatura de um contrato e
+               muito mais! Estamos à disposição para fazer dessa celebração uma das mais marcantes da sua vida profissional! Seus clientes são nossos clientes, e serão tratados
+               da maneira mais respeitosa possível, como verdadeiros clientes DRS. Então, o que está esperando? Vem pra DRS! Clique em "Orçamento" para entrar em contato
 			   com nossa equipe!
             </p>
         </main>
@@ -66,7 +77,7 @@
                 <div class="griditem fotografia">
                     Fotografia
                 </div>
-                <button class="fancybtn">Orçamento</button>
+                <button class="fancybtn"><a href="contato.html">Orçamento</a></button>
                 <!--Aqui vão ter divs de tamanhos diferentes que terão como background image 
                 o item correspondente, no caso dessa página seria algo tipo "Decoração, lua de mel
                 Doces..." etc como serviços específicos para casamento-->
@@ -83,6 +94,6 @@
             </div>
             <span> &copy;Neon Knights</span>
          </footer>
- 
+         <script src="js/main.js"></script>
      </body>
  </html>

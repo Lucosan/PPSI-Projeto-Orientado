@@ -1,0 +1,118 @@
+/*Regras responsivas*/
+/*Telas intermediárias como Tablets etc*/
+@media screen and (min-width: 450px) and (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    .presentvideo{
+        display: none;
+    }
+    #depoindex{
+        display: none;
+    }
+    #galeria{
+        justify-content: center;
+    }
+    div:not([class]){
+        flex-direction: column;
+        justify-content: center;
+    }
+    .apresentacao{
+        margin: 2rem 0;
+    }
+    .textoapresentacao{
+        width: 100%;
+        margin: 1rem;
+    }
+    .textoapresentacao h3{
+        text-align: center;
+    }
+    .textoapresentacao p{
+        margin: 0.3rem;
+    }
+    .textoapresentacao+img{
+        display: none;
+    }
+    .depodosclientes{
+        padding-left: 0;
+    }
+    .grideventos{
+        grid-template: 
+    "casamento casamento casamento casamento" 100px
+    "debutantes debutantes debutantes debutantes" 100px
+    "empresariais empresariais empresariais empresariais" 100px
+    "formaturas formaturas formaturas formaturas" 100px;
+    }
+    input, textarea{
+        width: 150%;
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+    .navbar li{
+        margin: 0.3rem 0;
+        text-align: center;
+    }
+    .burger{
+        display: flex;
+        align-items: center;
+    }
+    .burger a{
+        font-size: 1.8rem;
+        color: rgb(241,202,45);
+        opacity: 90%;
+    }
+    .presentvideo{
+        display: none;
+    }
+    #depoindex{
+        display: none;
+    }
+    #galeria{
+        justify-content: center;
+        align-items: center;
+    }
+    #galeria img{
+        width: 300px;
+    }
+    div:not([class]){
+        flex-direction: column;
+        justify-content: center;
+    }
+    .apresentacao{
+        margin: 2rem 0;
+    }
+    .textoapresentacao{
+        width: 100%;
+        margin: 1rem;
+    }
+    .textoapresentacao h3{
+        text-align: center;
+    }
+    .textoapresentacao p{
+        margin: 0.3rem;
+    }
+    .textoapresentacao+img{
+        display: none;
+    }
+    .depodosclientes{
+        padding-left: 0;
+    }
+    .grideventos{
+        grid-template: 
+    "casamento casamento casamento casamento" 100px
+    "debutantes debutantes debutantes debutantes" 100px
+    "empresariais empresariais empresariais empresariais" 100px
+    "formaturas formaturas formaturas formaturas" 100px;
+    }
+    input, textarea{
+        width: 150%;
+    }
+}
