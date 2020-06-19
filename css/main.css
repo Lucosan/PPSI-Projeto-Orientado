@@ -113,6 +113,9 @@ main img:nth-of-type(2){
     justify-content: space-evenly;
 }
 .fancybtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     min-height: 40px;
     font-size: 2rem;
@@ -120,14 +123,11 @@ main img:nth-of-type(2){
     background-color: rgba(161, 161, 161, 0.1);
     border: 1px solid #fff;
     color: #eee;
+    text-decoration: none;
     text-shadow: 0 0 5px var(--main-color);
     box-shadow: 0 0 5px rgba(241,202,45,0.5);
     border-radius: 13px;
     margin: 3rem auto;
-}
-.fancybtn a{
-    color: #eee;
-    text-decoration: none;
 }
 .fancybtn:hover{
     transition: var(--transpeed);
@@ -162,11 +162,11 @@ section ul p{
 }
 /*Depoimentos clientes index*/
 #depoindex{
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
-}
-#depoindex .fancybtn{
-    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*Area principal Depoimentos dos clientes */
 .depodosclientes{
@@ -253,6 +253,12 @@ textarea{
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
+#contador{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-top: 1rem;
+    align-self: flex-end;
+}
 /*Area principal Eventos*/
 .apresentacao{
     margin: 4.5rem;
@@ -331,6 +337,9 @@ textarea{
     top: 0;
     position: relative;
     z-index: -1;
+}
+.presentvideo h2{
+    color: #eee;
 }
 .presentvideo video{
     width: 100%;

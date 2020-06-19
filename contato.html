@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header role="banner">
+        <header>
              <h1>DRS eventos</h1>
              <a href="index.html"><img src="img/logo-DRS.png" alt="Logo da DRS eventos" class="logo"></a>
              <div class="burger">
@@ -54,15 +54,21 @@
             <form action="http://hub.fatecrl.edu.br/sobrino/recebe.php" method="GET">
                 <h2>Entre em Contato por E-mail:</h2>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" minlength="5" maxlength="20" required>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
                 <label for="telefone">Telefone:</label>
-                <input type="number" name="telefone" id="telefone">
+                <!--PARA O PROFESSOR-->
+                <!--Aqui entendemos que seria melhor e mais acessível se o formulário completasse
+                a formatação do telefone, mas por falta de um conhecimento mais profundo de Javascript
+                isso não foi possível-->
+                <input type="tel" name="telefone" id="telefone"
+                pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="11-2222-3333" required>
                 <label for="assunto">Assunto:</label>
-                <input type="text" name="assunto" id="assunto">
+                <input type="text" name="assunto" id="assunto" required>
                 <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <textarea maxlength="250" onkeydown="contador()" onkeyup="contador()" name="mensagem" id="mensagem" cols="30" rows="10" required maxlength="10"></textarea>
+                <div id="contador">250</div>
                 <input type="submit" value="Enviar" class="fancybtn">
             </form>
         </main>
@@ -77,7 +83,6 @@
             </div>
             <span> &copy;Neon Knights</span>
          </footer>
-         <script src="js/validador.js"></script>
          <script src="js/main.js"></script>
      </body>
  </html>
