@@ -90,6 +90,17 @@ li{
 main h2{
     margin: 1% auto;
 }
+main a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+main a:hover{
+    transition: var(--transpeed)        ;
+    text-decoration: underline;
+    text-shadow: 0 0 8px var(--main-color);
+}
 main img:first-of-type{
     display: block;
     width: 100%;
