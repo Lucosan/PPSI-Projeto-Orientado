@@ -3,33 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DRS Eventos - Principal </title>
-        <link rel="stylesheet" href="main.css">
+        <title>Início — DRS Eventos</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header role="banner" tabindex="0">
-
-             <h1 tabindex="1"> DRS Eventos </h1>
-
+        <header>
+             <h1>DRS eventos</h1>
+             <a href="index.html"><img src="img/logo-DRS.png" alt="Logo da DRS eventos" class="logo"></a>
+             <div class="burger">
+                <a href="#" class="icon" onclick="ativarburger()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+             <nav>
+                <ul class="navbar">
+                    <li class="nav-item"><a href="index.html">Início </a></li>
+                    <li class="nav-item dropdown"><a href="quemsomos.html">
+                        Quem somos</a>
+                        <ul>
+                            <li><a href="nossaequipe.html">Nossa Equipe</a></li>
+                            <li><a href="depoclientes.html">Depoimentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a href="eventos.html"> 
+                        Eventos</a>
+                        <ul>
+                            <li><a href="casamentos.html">Casamentos</a></li>
+                            <li><a href="debutantes.html">Debutantes</a></li>
+                            <li><a href="empresariais.html">Empresariais</a></li>
+                            <li><a href="formaturas.html">Formaturas</a></li>                            
+                        </ul>
+                    </li>   
+                    <li class="nav-item"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav role="rowgroup" tabindex="3">
-            <ul class="navbar" role="list">
-                <li class="nav-item" role="listitem" tabindex="2"><a href="index.html"> Início </a></li>
-				<li class="nav-item" role="listitem" tabindex="2"><a href="quemsomos.html"> Quem somos </a></li>
-                <li class="nav-item" role="listitem"><a href="clientes.html" tabindex="2"> Clientes </a></li>
-				<li class="nav-item" role="listitem" tabindex="2"><a href="cadastro.html"> Cadastro online </a></li>
-            </ul>
-        </nav>
-		        	
-        <!-- Ainda vamos definir se vai ter algo a partir do Nav, mas vou deixar o código dele aqui no comment
-		
-		<article role="">   
-        </article>
-		-->
-		
+        <section class="presentvideo">
+            <!--Um vídeo com um texto de Overlay dizendo algo tipo "DRS EVENTOS   -   NOSSO SLOGAN"  -->
+            <h2 class="videoverlay">DRS Eventos — Será inesquecível</h2>
+            <video src="videos/index.mp4" autoplay loop>
+            </video>
+        </section>
+        <main>
+            <h2>Por quê a DRS é para você</h2>
+            <p>Casamentos, Festas de debutante, Meetings empresariais e Formaturas. 
+            O que essas 4 coisas tão distintas têm em comum? 
+            O ato de comemorar!</p>
+            <p>A DRS acredita e têm como seu Slogan e filosofia que comemoração devem ser INESQUECÍVEIS.
+            Porém nada é mais importuno em um momento como esses do que ter que ficar cuidando de organização e contratação de diversas empresas e serviços. 
+            Nesses acontecimentos nossa empresa quer apenas que você se preocupe em comemorar e esqueça todo o resto. 
+            Precisa de uma festa de debutantes? Nós alugaremos o salão, nós iremos decorar, nós traremos os DJs, Músicos, Professores de dança, Cozinheiros, Garçons, Equipe de fotografia, Iluminação e tudo mais que você precisar.</p>
+            <img src="img/party-2.jpg" alt="Foto Festa">
+            <img src="img/party-3.jpeg" alt="Foto Festa">
+            <h2>Será inesquecível</h2>
+            <p>Nossa empresa acredita que momentos como esses devem ser memoráveis, muitas vezes são eventos únicos em nossas vidas, por isso temos sempre a <a href="nossaequipe.html">equipe</a> mais adequada para lidar com cada uma das situações que pode acontecer. 
+            O nosso símbolo é nada mais nada menos do que o momento mais icônico de uma comemoração, o tilintar das taças, uma tradição que atravessou gerações e foi o ponto de encontro entre diversas culturas da humanidade. 
+            Esse gesto é visto em vários momentos de nossas vidas, brindamos ao virar o ano, brindamos ao comemorar um encontro entre amigos em uma esquina. 
+            Quando duas pessoas se casam elas brindam em comemoração a relação que ali está surgindo, e quando sua filha completa 15 anos, marcando o fim de uma era na vida entre pais e filhos, os pais brindam. 
+            quando eles vêm aquele ser que eles colocaram no mundo se formando, os três brindam juntos e sorrisos se misturam a lágrimas em um momento tão emocionante.</p>
+            <p>Por isso, nós da DRS, erguemos uma taça em direção a você com um caloroso sorriso no rosto e afirmamos. Será inesquecível ;-)</p>
+                
+        </main>
+        <div id="depoindex">
+            <a class="fancybtn" href="depoclientes.html">Depoimentos</a>
+            <a class="fancybtn" href="contato.html">Orçamento</a>
+        </div>
         <footer>
-           <span> &copy;Neon Knights </span>
+           <div class="redesociais">
+               <!--Ícones para redes sociais e whatsapp-->
+               <img src="img/social/fb.png" alt="Logo Facebook" class="socialmd">
+               <img src="img/social/instagram.png" alt="Logo Instagram" class="socialmd">
+               <img src="img/social/twitter.png" alt="Logo Twitter" class="socialmd">
+               <img src="img/social/wpp.png" alt="Logo Whatsapp" class="socialmd">
+               <img src="img/social/ytb.png" alt="Logo Youtube" class="socialmd">
+           </div>
+           <span> &copy;Neon Knights</span>
         </footer>
-
+        <script src="js/main.js"></script>
     </body>
+    <!--PARA O PROFESSOR-->
+    <!--Estamos utilizando uma folha de estilos que provém do Font Awesome, apenas para utilizar o ícone
+        do menu responsivo, fora o ícone nada mais foi usado-->
+    <!--Alguns dos comentários feitos durante o projeto foram mantidos para fim de documentação
+    do processo de criação mesmo que eles não façam mais sentido-->
 </html>
