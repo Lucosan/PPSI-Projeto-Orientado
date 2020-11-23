@@ -34,3 +34,19 @@ function contador(){
     }
     contadordiv.innerText = `${charscontador-limite}`
 }
+//Alto contraste 
+let aux = 0
+const root = document.documentElement
+document.querySelector('[value="Alto Contraste"]').addEventListener('click', () => {
+    if(aux>0){
+        root.style.setProperty("--bg-color", "rgb(45,45,45)")
+        root.style.setProperty("--main-color", "rgb(241,202,45)")
+        root.style.setProperty('--text-color', "#eee");
+        aux=0
+    }else{
+        aux+=1
+        root.style.setProperty("--bg-color", "rgb(221, 221, 221)")
+        root.style.setProperty("--main-color", "rgb(20, 20, 20)")
+        root.style.setProperty("--text-color", "rgb(20, 20, 20)")
+    }
+})
