@@ -359,7 +359,7 @@ textarea{
     z-index: -1;
 }
 .presentvideo h2{
-    color: var(--text-color);
+    color: #eee;
 }
 .presentvideo video{
     width: 100%;
