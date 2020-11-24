@@ -4,9 +4,13 @@
     font-size: 19px;
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     --bg-color:rgb(45,45,45);
+    /*--bg-color:rgb(221, 221, 221);*/
     --main-color: rgb(241,202,45);
+    /*--main-color: rgb(20, 20, 20);*/
     --transcolor: rgba(0, 0, 0, 0.6);
     --transpeed: 0.4s;
+    --text-color: #eee;
+    /*--text-color: rgb(20, 20, 20);*/
     overflow-x: hidden;
 }
 *{
@@ -15,7 +19,12 @@
 }
 body{
     background-color: var(--bg-color);
-    color: #eee;
+    color:var(--text-color);
+}
+[value="Alto Contraste"]{
+    position: fixed;
+    right: 0;
+    bottom: 2rem;
 }
 header{
     width: 100%;
@@ -92,7 +101,7 @@ main h2{
 }
 main a {
     text-decoration: none;
-    color: #eee;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -133,7 +142,7 @@ main img:nth-of-type(2){
     transition: var(--transpeed);
     background-color: rgba(161, 161, 161, 0.1);
     border: 1px solid #fff;
-    color: #eee;
+    color: var(--text-color);
     text-decoration: none;
     text-shadow: 0 0 5px var(--main-color);
     box-shadow: 0 0 5px rgba(241,202,45,0.5);
@@ -485,13 +494,15 @@ footer{
     max-width: 50px;
     padding: 10px;
     margin: 10px;
-    background-color: rgb(175, 143, 14);
+    background-color: var(--main-color);
+    filter: brightness(100%);
     border-radius: 10px;
     box-shadow: 0 0 5px rgb(117, 114, 114);
 }
 .socialmd:hover{
     transition: var(--transpeed);
     background-color: var(--main-color);
+    filter: brightness(200%);
     box-shadow: 0 0 6px #fff;
 }
 footer span{
@@ -499,5 +510,25 @@ footer span{
     color: var(--main-color);
     font-weight: bold;
     font-size: 1.7rem;
-    text-shadow: 0 0 5px rgb(148, 150, 32);
+    text-shadow: 0 0 5px var(--main-color);
+}
+/*Tabela do Index, o site não sobreviveria sem uma tabela*/ 
+caption{
+    border: 2px solid var(--main-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 0;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    padding: 10px;
+}
+table{
+    margin: 2rem auto;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid var(--main-color);
+    padding: 10px;
 }
