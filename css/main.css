@@ -145,7 +145,8 @@ main img:nth-of-type(2){
     color: var(--text-color);
     text-decoration: none;
     text-shadow: 0 0 5px var(--main-color);
-    box-shadow: 0 0 5px rgba(241,202,45,0.5);
+    /*box-shadow: 0 0 5px rgba(241,202,45,0.5);*/
+    box-shadow: 0 0 5px var(--main-color);
     border-radius: 13px;
     margin: 3rem auto;
 }
