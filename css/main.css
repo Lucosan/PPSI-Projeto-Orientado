@@ -178,7 +178,7 @@ h4{
 }
 section ul p{
     margin: 1rem;
-    color: #ddd;
+    color: var(--text-color);
     text-shadow: 0 0 3px rgba(241, 202, 45, 0.4);
 }
 /*Depoimentos clientes index*/
